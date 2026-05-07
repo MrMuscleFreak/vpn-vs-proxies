@@ -20,10 +20,16 @@ auth_param basic realm Proxy
 acl authenticated proxy_auth REQUIRED
 
 acl localnet src 10.0.0.0/8
-acl localnet src 172.16.0.0/12
+acl localnet src 127.0.0.1/32
 acl localnet src 192.168.0.0/16
 
-http_access allow localnet authenticated
+acl SSL_ports port 443
+acl Safe_ports port 80
+acl Safe_ports port 443
+acl CONNECT method CONNECT
+
+http_access allow localhost
+http_access allow localnet
 http_access deny all
 EOF
 
