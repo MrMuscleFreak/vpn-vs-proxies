@@ -27,13 +27,11 @@ Tools:
 - Testing: ping, iperf3, web-based speed tests.
 - Sniffer: Wireshark.
 
-### Screenshot Placeholders
+![Proxy server terminal or service status screenshot](images/proxy_start.png)
+_Figure: Proxy server terminal and service status after startup._
 
-Insert screenshot of the client machine and network topology here after the environment is prepared.
-
-Insert screenshot of the VPN server terminal or service status here after the VPN is started.
-
-Insert screenshot of the proxy server terminal or service status here after the proxy is started.
+![VPN server terminal or service status screenshot](images/vpn_start.png)
+_Figure: VPN server terminal and service status after startup._
 
 ## 5. Methodology (Planned)
 
